@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Creating a Filterable List With JavaScript</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+	</head>
+	<style>
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			width: 100vw;
+			height: 100vh;
+			display: grid;
+			justify-items: center;
+			align-items: center;
+			background-color: #ccc;
+		}
+
+		.main {
+			width: 500px;
+			box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+			padding: 2rem;
+			background: #fff;
+		}
+
+		#search {
+			border: none;
+			border-radius: 0;
+			border-bottom: 3px solid #aaa;
+		}
+
+		#search:focus {
+			box-shadow: none !important;
+		}
+	</style>
+	<body>
+		<div class="main">
+			<h1 class="text-center"><strong>Contact List</strong></h1>
+			<br />
+			<div class="inputDiv mx-auto">
+				<input type="text" id="search" class="form-control p-2" placeholder="Search Contacts..." />
+			</div>
+			<br /><br />
+			<ul class="list-group">
+				<li class="list-group-item active">A</li>
+				<li class="list-group-item">AGWE</li>
+				<li class="list-group-item">AGNES</li>
+				<li class="list-group-item">ABEL</li>
+				<li class="list-group-item">ANTHONY</li>
+
+				<li class="list-group-item active">B</li>
+				<li class="list-group-item">BRYAN</li>
+				<li class="list-group-item">BERNES</li>
+				<li class="list-group-item">BESSONG</li>
+				<li class="list-group-item">BRAD</li>
+
+				<li class="list-group-item active">C</li>
+				<li class="list-group-item">CATHY</li>
+				<li class="list-group-item">CADY</li>
+				<li class="list-group-item">CHAMP</li>
+				<li class="list-group-item">CINDY</li>
+			</ul>
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>
